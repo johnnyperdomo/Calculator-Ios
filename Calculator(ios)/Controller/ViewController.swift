@@ -17,7 +17,7 @@ enum Operation: String {
 }
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIGestureRecognizerDelegate {
 
     var runningNumber = ""
     var currentOperation:Operation = .Null
@@ -35,6 +35,8 @@ class ViewController: UIViewController {
 
         numberView.text = "0"
         number0.isEnabled = false
+        
+        addSwipe()
     }
 
     @IBAction func clearBtnPressed(_ sender: RoundButton) {
@@ -88,6 +90,29 @@ class ViewController: UIViewController {
     
     @IBAction func equalBtnPressed(_ sender: RoundButton) {
         operation(operation: currentOperation)
+    }
+    
+    
+    func addSwipe() {
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(removeLastDigit))
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.left
+        
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(removeLastDigit))
+        swipeRight.direction = UISwipeGestureRecognizerDirection.right
+        
+        numberView.addGestureRecognizer(swipeLeft)
+        numberView.addGestureRecognizer(swipeRight)
+    }
+    
+    @objc func removeLastDigit() { //remove last digit when we swipe
+        
+       
+        runningNumber = String(runningNumber.dropLast())
+        numberView.text = runningNumber
+        
+        if runningNumber.count < 1 {
+            numberView.text = "0"
+        }
     }
     
     
