@@ -22,13 +22,13 @@
                                 <rect key="frame" x="0.0" y="217" width="375" height="440"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hSO-EL-KuQ">
-                                        <rect key="frame" x="14.5" y="0.0" width="346" height="80"/>
+                                        <rect key="frame" x="12.5" y="0.0" width="350" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U89-Dh-rMb" customClass="RoundButton" customModule="Calculator_ios_" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="256" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="260" height="80"/>
                                                 <color key="backgroundColor" red="0.65098039220000004" green="0.65098039220000004" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="256" id="T44-d9-Uh9"/>
+                                                    <constraint firstAttribute="width" constant="260" id="T44-d9-Uh9"/>
                                                     <constraint firstAttribute="height" constant="80" id="pvJ-Ew-PPv"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="35"/>
@@ -43,7 +43,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5NJ-bE-Di7" customClass="RoundButton" customModule="Calculator_ios_" customModuleProvider="target">
-                                                <rect key="frame" x="266" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="270" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.94509803920000002" green="0.59999999999999998" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="CdA-h5-wXS"/>
@@ -358,7 +358,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHg-Yb-Xk3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="33" translatesAutoresizingMaskIntoConstraints="NO" id="lHg-Yb-Xk3">
                                 <rect key="frame" x="20" y="119" width="335" height="78"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="65"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -377,6 +377,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="dotBtn" destination="TaK-da-vrP" id="sXk-r1-MlV"/>
+                        <outlet property="number0" destination="oS1-lj-RDL" id="erK-Zb-uwO"/>
                         <outlet property="numberView" destination="lHg-Yb-Xk3" id="j7s-s7-9al"/>
                     </connections>
                 </viewController>
