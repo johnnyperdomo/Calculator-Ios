@@ -36,6 +36,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         number0.isEnabled = false
         
         addSwipe()
+        flipValue()
     }
 
     @IBAction func clearBtnPressed(_ sender: RoundButton) {
@@ -66,8 +67,10 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         }
         
         if runningNumber.count <= 9 {
-        runningNumber += "\(sender.tag)"
-        numberView.text = runningNumber
+            if sender.tag < 12 {
+                runningNumber += "\(sender.tag)"
+                numberView.text = runningNumber
+            }
         }
     }
     
@@ -90,6 +93,10 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBAction func equalBtnPressed(_ sender: RoundButton) {
         operation(operation: currentOperation)
     }
+    @IBAction func flipValueBtnPressed(_ sender: Any) {
+        flipValue()
+    }
+    
     
     
     func addSwipe() {
@@ -102,6 +109,22 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         numberView.addGestureRecognizer(swipeLeft)
         numberView.addGestureRecognizer(swipeRight)
     }
+    
+    func flipValue() {
+        if runningNumber != "" {
+            
+            runningNumber = "\(-Double(runningNumber)!)" //pos/neg flip
+            
+            if (Double(runningNumber)!.truncatingRemainder(dividingBy: 1) == 0) { //make doubles, integers
+                runningNumber = "\(Int(Double(runningNumber)!))"
+            }
+            
+            numberView.text = runningNumber
+        }
+        
+        
+    }
+    
     
     @objc func removeLastDigit() { //remove last digit when we swipe
         
