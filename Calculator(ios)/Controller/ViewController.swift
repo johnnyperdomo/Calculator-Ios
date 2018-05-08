@@ -28,7 +28,6 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var numberView: UILabel!
     @IBOutlet weak var number0: RoundButton!
     @IBOutlet weak var dotBtn: RoundButton!
-    @IBOutlet weak var flipValueBtn: RoundButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
