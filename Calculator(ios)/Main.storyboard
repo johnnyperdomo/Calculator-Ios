@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iNO-Px-DE4">
-                                <rect key="frame" x="0.0" y="217" width="375" height="440"/>
+                                <rect key="frame" x="0.0" y="215.5" width="375" height="441.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hSO-EL-KuQ">
-                                        <rect key="frame" x="12.5" y="0.0" width="350" height="80"/>
+                                        <rect key="frame" x="12.5" y="0.0" width="350" height="80.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U89-Dh-rMb" customClass="RoundButton" customModule="Calculator_ios_" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="170" height="80"/>
@@ -82,7 +82,7 @@
                                         <viewLayoutGuide key="safeArea" id="1TW-L5-RrM"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zv7-AJ-fmS">
-                                        <rect key="frame" x="12.5" y="90" width="350" height="80"/>
+                                        <rect key="frame" x="12.5" y="90.5" width="350" height="80"/>
                                         <subviews>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0K-Wg-WM2" customClass="RoundButton" customModule="Calculator_ios_" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -160,7 +160,7 @@
                                         <viewLayoutGuide key="safeArea" id="fpp-K3-Ov3"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1yv-Aa-RaA">
-                                        <rect key="frame" x="12.5" y="180" width="350" height="80"/>
+                                        <rect key="frame" x="12.5" y="180.5" width="350" height="80.5"/>
                                         <subviews>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdg-Ol-e3m" customClass="RoundButton" customModule="Calculator_ios_" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -237,7 +237,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z3C-XT-nUY">
-                                        <rect key="frame" x="12.5" y="270" width="350" height="80"/>
+                                        <rect key="frame" x="12.5" y="271" width="350" height="80"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKr-Ar-icx" customClass="RoundButton" customModule="Calculator_ios_" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -315,7 +315,7 @@
                                         <viewLayoutGuide key="safeArea" id="FcI-sa-Xou"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rre-ar-8SI">
-                                        <rect key="frame" x="13.5" y="360" width="348" height="80"/>
+                                        <rect key="frame" x="13.5" y="361" width="348" height="80.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oS1-lj-RDL" customClass="RoundButton" customModule="Calculator_ios_" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="168" height="80"/>
@@ -377,7 +377,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="33" translatesAutoresizingMaskIntoConstraints="NO" id="lHg-Yb-Xk3">
-                                <rect key="frame" x="20" y="101.5" width="335" height="95.5"/>
+                                <rect key="frame" x="20" y="100" width="335" height="95.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -385,11 +385,12 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="iNO-Px-DE4" firstAttribute="top" secondItem="lHg-Yb-Xk3" secondAttribute="bottom" constant="20" id="4S0-Ji-MT3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lHg-Yb-Xk3" secondAttribute="trailing" constant="20" id="N9a-M0-igr"/>
+                            <constraint firstItem="iNO-Px-DE4" firstAttribute="top" secondItem="lHg-Yb-Xk3" secondAttribute="bottom" constant="20" id="big-ZS-9i5"/>
                             <constraint firstItem="lHg-Yb-Xk3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="djw-5N-k4x"/>
                             <constraint firstItem="iNO-Px-DE4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rPB-2F-tlP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iNO-Px-DE4" secondAttribute="trailing" id="t1y-mO-XkP"/>
+                            <constraint firstItem="lHg-Yb-Xk3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="uM8-on-A5e"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iNO-Px-DE4" secondAttribute="bottom" constant="10" id="xVL-fW-tuF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
