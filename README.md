@@ -25,4 +25,4 @@ Simple iOS Calculator written in Swift 4
   - iphone / ipad
   
 ## License
-Standard MIT [License](Calculator-Ios/LICENSE)
+Standard MIT [License](https://github.com/johnnyperdomo/Calculator-Ios/blob/master/LICENSE)
