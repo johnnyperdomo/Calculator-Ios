@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,21 +15,25 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator_ios_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iNO-Px-DE4">
-                                <rect key="frame" x="0.0" y="215.5" width="375" height="441.5"/>
+                                <rect key="frame" x="0.0" y="215.66666666666666" width="414" height="510.33333333333337"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hSO-EL-KuQ">
-                                        <rect key="frame" x="12.5" y="0.0" width="350" height="80.5"/>
+                                        <rect key="frame" x="32" y="0.0" width="350" height="94"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U89-Dh-rMb" customClass="RoundButton" customModule="Calculator_ios_" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="170" height="80"/>
                                                 <color key="backgroundColor" red="0.65098039220000004" green="0.65098039220000004" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="170" id="T44-d9-Uh9"/>
-                                                    <constraint firstAttribute="height" constant="80" id="pvJ-Ew-PPv"/>
+                                                    <constraint firstAttribute="width" constant="170" id="T44-d9-Uh9">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="345"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="height" constant="80" id="pvJ-Ew-PPv">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="35"/>
                                                 <state key="normal" title="C">
@@ -38,6 +42,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="85"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="clearBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2lS-xW-m8h"/>
                                                 </connections>
@@ -46,8 +53,12 @@
                                                 <rect key="frame" x="180" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.65098039220000004" green="0.65098039220000004" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="80" id="CdA-h5-wXS"/>
-                                                    <constraint firstAttribute="width" constant="80" id="vVS-GH-XBq"/>
+                                                    <constraint firstAttribute="height" constant="80" id="CdA-h5-wXS">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="80" id="vVS-GH-XBq">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                                 <state key="normal" title="+/-">
@@ -56,6 +67,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="flipValueBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zEM-BG-yHu"/>
                                                 </connections>
@@ -64,8 +78,12 @@
                                                 <rect key="frame" x="270" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.25195333669999997" green="0.59576464510000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="80" id="uvj-Gt-Mmt"/>
-                                                    <constraint firstAttribute="height" constant="80" id="wt3-cR-vJc"/>
+                                                    <constraint firstAttribute="width" constant="80" id="uvj-Gt-Mmt">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="height" constant="80" id="wt3-cR-vJc">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                                 <state key="normal" title="÷">
@@ -74,22 +92,30 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="divisionBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pBO-He-ZSu"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <viewLayoutGuide key="safeArea" id="1TW-L5-RrM"/>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="25"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zv7-AJ-fmS">
-                                        <rect key="frame" x="12.5" y="90.5" width="350" height="80"/>
+                                        <rect key="frame" x="32" y="104.00000000000003" width="350" height="94"/>
                                         <subviews>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0K-Wg-WM2" customClass="RoundButton" customModule="Calculator_ios_" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="80" id="mPu-6F-0kI"/>
-                                                    <constraint firstAttribute="height" constant="80" id="ubN-NF-gli"/>
+                                                    <constraint firstAttribute="width" constant="80" id="mPu-6F-0kI">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="height" constant="80" id="ubN-NF-gli">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="7">
@@ -98,6 +124,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8GJ-ku-DSx"/>
                                                 </connections>
@@ -106,8 +135,12 @@
                                                 <rect key="frame" x="90" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="80" id="Sgk-oU-Bj0"/>
-                                                    <constraint firstAttribute="width" constant="80" id="gy0-OI-3Pn"/>
+                                                    <constraint firstAttribute="height" constant="80" id="Sgk-oU-Bj0">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="80" id="gy0-OI-3Pn">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="8">
@@ -116,6 +149,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QVa-bc-h6Z"/>
                                                 </connections>
@@ -124,8 +160,12 @@
                                                 <rect key="frame" x="180" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="80" id="Al2-2L-oyE"/>
-                                                    <constraint firstAttribute="height" constant="80" id="KkA-Rf-rTy"/>
+                                                    <constraint firstAttribute="width" constant="80" id="Al2-2L-oyE">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="height" constant="80" id="KkA-Rf-rTy">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="9">
@@ -134,6 +174,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FUZ-bT-OYF"/>
                                                 </connections>
@@ -142,8 +185,12 @@
                                                 <rect key="frame" x="270" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.25195333669999997" green="0.59576464510000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="80" id="NUe-R2-d4Z"/>
-                                                    <constraint firstAttribute="height" constant="80" id="VPE-Vt-38c"/>
+                                                    <constraint firstAttribute="width" constant="80" id="NUe-R2-d4Z">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="height" constant="80" id="VPE-Vt-38c">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                                 <state key="normal" title="×">
@@ -152,22 +199,30 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="multiplicationBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="etS-Oc-sbl"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <viewLayoutGuide key="safeArea" id="fpp-K3-Ov3"/>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="25"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1yv-Aa-RaA">
-                                        <rect key="frame" x="12.5" y="180.5" width="350" height="80.5"/>
+                                        <rect key="frame" x="32" y="208.00000000000003" width="350" height="94.333333333333343"/>
                                         <subviews>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdg-Ol-e3m" customClass="RoundButton" customModule="Calculator_ios_" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="80" id="DhY-fZ-W3e"/>
-                                                    <constraint firstAttribute="height" constant="80" id="jo7-lN-ul3"/>
+                                                    <constraint firstAttribute="width" constant="80" id="DhY-fZ-W3e">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="height" constant="80" id="jo7-lN-ul3">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="4">
@@ -176,6 +231,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cv2-u9-iKW"/>
                                                 </connections>
@@ -184,8 +242,12 @@
                                                 <rect key="frame" x="90" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="80" id="34I-aE-Tos"/>
-                                                    <constraint firstAttribute="height" constant="80" id="K29-LK-bH3"/>
+                                                    <constraint firstAttribute="width" constant="80" id="34I-aE-Tos">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="height" constant="80" id="K29-LK-bH3">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="5">
@@ -194,6 +256,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Flh-KB-YU7"/>
                                                 </connections>
@@ -202,8 +267,12 @@
                                                 <rect key="frame" x="180" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="80" id="0bc-2X-JpA"/>
-                                                    <constraint firstAttribute="width" constant="80" id="oc6-Jt-hjP"/>
+                                                    <constraint firstAttribute="height" constant="80" id="0bc-2X-JpA">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="80" id="oc6-Jt-hjP">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="6">
@@ -212,6 +281,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7A3-8v-JIC"/>
                                                 </connections>
@@ -220,8 +292,12 @@
                                                 <rect key="frame" x="270" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.25195333669999997" green="0.59576464510000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="80" id="aYC-d9-7TR"/>
-                                                    <constraint firstAttribute="height" constant="80" id="sTv-Lq-I8t"/>
+                                                    <constraint firstAttribute="width" constant="80" id="aYC-d9-7TR">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="height" constant="80" id="sTv-Lq-I8t">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                                 <state key="normal" title="-">
@@ -230,21 +306,29 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="subtractionBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="udW-wy-v0q"/>
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="25"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z3C-XT-nUY">
-                                        <rect key="frame" x="12.5" y="271" width="350" height="80"/>
+                                        <rect key="frame" x="32" y="312.33333333333337" width="350" height="94"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKr-Ar-icx" customClass="RoundButton" customModule="Calculator_ios_" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="80" id="4GJ-aJ-Bz3"/>
-                                                    <constraint firstAttribute="width" constant="80" id="O4H-pR-qGP"/>
+                                                    <constraint firstAttribute="height" constant="80" id="4GJ-aJ-Bz3">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="80" id="O4H-pR-qGP">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="1">
@@ -253,6 +337,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hxq-f2-Wlc"/>
                                                 </connections>
@@ -261,8 +348,12 @@
                                                 <rect key="frame" x="90" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="80" id="lud-E6-tGW"/>
-                                                    <constraint firstAttribute="width" constant="80" id="vvh-xd-TVn"/>
+                                                    <constraint firstAttribute="height" constant="80" id="lud-E6-tGW">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="80" id="vvh-xd-TVn">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="2">
@@ -271,6 +362,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RD6-Ic-ots"/>
                                                 </connections>
@@ -279,8 +373,12 @@
                                                 <rect key="frame" x="180" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="80" id="Yz5-mm-g6O"/>
-                                                    <constraint firstAttribute="height" constant="80" id="dNL-HD-yjj"/>
+                                                    <constraint firstAttribute="width" constant="80" id="Yz5-mm-g6O">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="height" constant="80" id="dNL-HD-yjj">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="3">
@@ -289,6 +387,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zdJ-Yg-AQc"/>
                                                 </connections>
@@ -297,8 +398,12 @@
                                                 <rect key="frame" x="270" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.25195333669999997" green="0.59576464510000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="80" id="7uI-kg-ME3"/>
-                                                    <constraint firstAttribute="height" constant="80" id="FVT-br-9pN"/>
+                                                    <constraint firstAttribute="width" constant="80" id="7uI-kg-ME3">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="height" constant="80" id="FVT-br-9pN">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                                 <state key="normal" title="+">
@@ -307,22 +412,30 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="additionBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fiZ-I8-yKi"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <viewLayoutGuide key="safeArea" id="FcI-sa-Xou"/>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="25"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rre-ar-8SI">
-                                        <rect key="frame" x="13.5" y="361" width="348" height="80.5"/>
+                                        <rect key="frame" x="33" y="416.33333333333337" width="348" height="94"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oS1-lj-RDL" customClass="RoundButton" customModule="Calculator_ios_" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="168" height="80"/>
                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="80" id="I8G-SB-u8i"/>
-                                                    <constraint firstAttribute="width" constant="168" id="i5L-Hq-eoO"/>
+                                                    <constraint firstAttribute="height" constant="80" id="I8G-SB-u8i">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="168" id="i5L-Hq-eoO">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="345"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <state key="normal" title="0">
@@ -331,6 +444,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hvM-Qz-4Hh"/>
                                                 </connections>
@@ -339,8 +455,12 @@
                                                 <rect key="frame" x="178" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="80" id="LwO-18-CEi"/>
-                                                    <constraint firstAttribute="height" constant="80" id="vVh-IZ-g09"/>
+                                                    <constraint firstAttribute="width" constant="80" id="LwO-18-CEi">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="height" constant="80" id="vVh-IZ-g09">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <state key="normal" title=".">
@@ -349,6 +469,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="dotBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mbr-b4-vhF"/>
                                                 </connections>
@@ -357,8 +480,12 @@
                                                 <rect key="frame" x="268" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.25195333669999997" green="0.59576464510000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="80" id="POv-0C-3vK"/>
-                                                    <constraint firstAttribute="width" constant="80" id="haR-Yh-uMe"/>
+                                                    <constraint firstAttribute="height" constant="80" id="POv-0C-3vK">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="80" id="haR-Yh-uMe">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                                 <state key="normal" title="=">
@@ -367,20 +494,27 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="equalBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5co-P9-1V4"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <viewLayoutGuide key="safeArea" id="QrZ-6g-ArI"/>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="25"/>
                                     </stackView>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="33" translatesAutoresizingMaskIntoConstraints="NO" id="lHg-Yb-Xk3">
-                                <rect key="frame" x="20" y="100" width="335" height="95.5"/>
+                                <rect key="frame" x="20" y="100" width="374" height="95.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="110"/>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -390,7 +524,9 @@
                             <constraint firstItem="lHg-Yb-Xk3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="djw-5N-k4x"/>
                             <constraint firstItem="iNO-Px-DE4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rPB-2F-tlP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iNO-Px-DE4" secondAttribute="trailing" id="t1y-mO-XkP"/>
-                            <constraint firstItem="lHg-Yb-Xk3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="uM8-on-A5e"/>
+                            <constraint firstItem="lHg-Yb-Xk3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="uM8-on-A5e">
+                                <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                            </constraint>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iNO-Px-DE4" secondAttribute="bottom" constant="10" id="xVL-fW-tuF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
