@@ -2,7 +2,7 @@
 Simple iOS Calculator written in Swift 4
 
 ## Preview
-![Alt Text](https://media.giphy.com/media/3XyqIefdrD8vfCxwlK/giphy.gif)
+![Alt Text](https://media.giphy.com/media/kG9DBXyXkhuhKz6c2L/giphy.gif)
 
 **Built with**
 - Ios 11
